@@ -1,0 +1,74 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+
+header{
+	text-align: center;
+	color: #232323;
+}
+nav ul{
+	overflow:hidden;
+	display: flex;
+	color:#fff;
+	list-style: none;
+	float:left;
+	padding:0;
+	width: 100%;
+	margin:0 0 0;
+	background: #1abc9c;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+}
+
+nav ul li{
+	margin: 0;
+	float: left;
+}
+
+nav ul a{
+	padding:25px;
+	display:block;
+	font-weight:600;
+	font-size: 16px;
+	color:#fff;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	text-decoration: none;
+}
+
+nav ul a:hover {
+	text-decoration: underline;
+	background-color:#16a085;
+}
+
+form {
+    width:280px;
+    float: left;
+    margin-top:15px;
+    margin-bottom: 15px;
+    margin-left: 420px;
+}
+
+.search {
+    padding:8px 15px;
+    background:rgba(50, 50, 50, 0.2);
+    border:0px solid #dbdbdb;
+    color: #fff;
+}
+
+.search::-webkit-input-placeholder{
+	color: #fff;
+}
+
+.button {
+    position:relative;
+    padding:6px 15px;
+    left:-8px;
+    border:2px solid #53bd84;
+    background-color:#53bd84;
+    color:#fafafa;
+}
+
+.button:hover  {
+    background-color:#fafafa;
+    color:#207cca;
+}
