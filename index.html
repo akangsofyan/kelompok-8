@@ -1,77 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 	<title>Tempat Nongkrong Balikpapan</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	
 	<!--Bagian Header-->
-	<header>
-		<center>	
-		<h1>Tempat Nongkrong Balikpapan</h1>
-		<p>Cari tempat nongkrongmu di Balikpapan</p>
-		<h5>
-			<i>Temukan sekarang juga tempat favoritmu</i>
-		</h5>
-		</center>
+	<header>	
+	
+		<h1 class="judul">Tempat Nongkrong Balikpapan</h1>
+		<p class="deskripsi">Cari tempat nongkrongmu di Balikpapan & temukan sekarang juga tempat favoritmu</p>
+		
 	</header>
 
 	<!--Bagian Navigasi-->
-	<center>
-		<nav>
-		<a href="#">Menu Utama</a> |
-		<a href="#">Rekomendasi</a> |
-		<a href="#">Tempat Populer</a>
-		</nav>
+	<nav>
+		<ul>	
+			<li>
+				<a href="index.html">Beranda</a>
+			</li>
+			<li>
+				<a href="pages/rekomendasi.html">Rekomendasi</a>
+			</li>
+			<li>
+				<a href="pages/populer.html">Tempat Populer</a> 
+			</li>
+			<li>
+				<a href="pages/tentang.html">Tentang Kami</a>
+			</li>
+			<li>
+				<form>
+					<input class="search" type="text" placeholder="Cari tempat..." required>	
+					<input class="button" type="button" value="Cari">		
+				</form>
+			</li>
+		</ul>
+	
+	</nav>
+	<!--Bagian Konten-->
+	<div class="main">
+		<h1 class="judul">BERANDA</h1>
+		<p class="deskripsi">Temukan info terbaru tentang tempat-tempat baru untuk kamu kunjungi</p>
+	</div>
+	<div class="container">
+		<aside class="sidebar">
+			<div class="widget">
+				<h2>Rekomendasi</h2>
+				<p>Berikut adalah daftar rekomendasi tempat untuk kalian.</p>
+				<ul>
+					<li><a href="pages/laperpoll.html">Angkringan Laperpoll</a></li>
+					<li><a href="pages/kopi-mantan.html">Kopi Rumah Mantan</a></li>
+					<li><a href="pages/kedai-27.html">Kedai 27</a></li>
+				</ul>
+			</div>
+			<div class="widget">
+				<h2>Tempat Populer</h2>
+				<p>Berikut adalah daftar tempat populer untuk kalian.</p>
+				<ul>
+					<li><a href="pages/laperpoll.html">Angkringan Laperpoll</a></li>
+					<li><a href="pages/kopi-mantan.html">Kopi Rumah Mantan</a></li>
+					<li><a href="pages/kedai-27.html">Kedai 27</a></li>
+				</ul>
+			</div>
+			<div class="widget">
+				<h2>Tentang Kami</h2>
+				<p>Jika anda ingin mempromosikan tempat nongkrong silahkan hubungi kami <a href="pages/tentang.html">di sini</a>.</p>
+			</div>
+		</aside>
 
-	<!--Bagian Form-->
-		<br>
-		<form>
-			<input class="search" type="text" placeholder="Cari tempat..." required>	
-			<input class="button" type="button" value="Cari">		
-		</form>
-	</center>
+		<div class="blog">
+			<div class="content">
+				<div class="post-info">
+					Di Posting Oleh <b>ADMIN</b>
+				</div>
+				<img src="img/laper.jpg">
+				<h1> Angkringan Laperpoll </h1>
+				<hr>
+				<p>
+					<br>Alamat: Jalan Satu, Gn. Samarinda, Kec. Balikpapan Utara, Kota Balikpapan, Kalimantan Timur 76124
+					<br>Buka setiap hari	17.00 – 04.30
+				</p>				
+				<a href="pages/laperpoll.html" class="continue">Selengkapnya →</a>
+			</div>
 
-	<!--Bagian Image-->
-	<h3>Angkringan Laperpoll</h3>
-	<img src="laper.jpg" alt="Laperpoll" width="30%">
+			<div class="content">
+				<div class="post-info">
+					Di Posting Oleh <b>ADMIN</b>
+				</div>
+				<img src="img/mantan.jpg">
+				<h1> Kopi Rumah Mantan </h1>
+				<hr>
+				<p>
+					<br>Alamat : Jl. Soekarno Hatta KM 3 (Sebelah Klinik Mitra Sehat), Batu Ampar, Balikpapan Selatan, Balikpapan
+					<br>Buka setiap hari	00:00 - 01:00, 10:00 - 23:59
+				</p>				
+				<a href="pages/kopi-mantan.html" class="continue">Selengkapnya →</a>
+			</div>
 
-	<!--Bagian Table-->
-	<h3>Tabel Tempat Populer</h3>
-	<table width="500" ; border="1">
-	  <tr>
-	    <th>Nama Tempat</th>
-	    <th>Alamat</th>
-	  </tr>
-	  <tr>
-	    <td>Angkringan Laperpoll</td>
-	    <td>Kampung Timur</td>
-	  </tr>
-	  <tr>
-	    <td>Kopi Rumah Mantan</td>
-	    <td>Kilo 3</td>
-	  </tr>
-	</table>
-
-	<!--Bagian List-->
-	<h3>List Tempat Populer Tempat Populer</h3>
-	<ul type="disc">
-		<li>Angkringan Laperpoll</li>
-		<li>Kopi Rumah Mantan</li>
-		<li>Cafe Wain</li>
-	</ul>
-	<h3>List Tempat Populer Tempat Populer</h3>
-	<ol type="1">
-		<li>Angkringan Laperpoll</li>
-		<li>Kopi Rumah Mantan</li>
-		<li>Cafe Wain</li>
-	</ol>
+			<div class="content">
+				<div class="post-info">
+					Di Posting Oleh <b>ADMIN</b>
+				</div>
+				<img src="img/kedai.jpg">
+				<h1> Kedai 27 </h1>
+				<hr>
+				<p>
+					<br>Alamat : Jalan Sukarno Hatta Km2, No12, Rt48 Kelurahan, Gn. Samarinda, Kec. Balikpapan Utara, Kota Balikpapan, Kalimantan Timur 76125
+					<br>Buka setiap hari 10.00-00.00
+				</p>				
+				<a href="pages/kedai-27.html" class="continue">Selengkapnya →</a>
+			</div>
+		</div>
+	</div>
 
 	<!--Bagian Footer-->
 	<footer>
-		<center>
-		<p>Created by : Kelompok 8</p>
-		</center>	
+		<h3>Website ini dibuat untuk memudahkan anda dalam mencari tempat nongkrong bersama teman</h3>
+		<p>&copy; Kelompok 8</p>	
 	</footer>
 
 </body>
